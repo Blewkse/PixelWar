@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 
-const Pixel = () =>{
+function Pixel() {
+
+    const [color, setColor] = useState("#FFFFFF");
+
+    const handleClick = useCallback(() => {
+        setColor("#FFBB77")
+    }, []);
     
     return (
-        <div className="bg-white w-8 h-8 border">
+        <div className="w-8 h-8 border cursor-pointer" style={{background: color}} onClick={handleClick}>
             
         </div>
     );
