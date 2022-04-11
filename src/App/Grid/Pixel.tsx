@@ -9,7 +9,7 @@ function Pixel() {
     }, []);
     
     return (
-        <div className="w-8 h-8 border cursor-pointer" style={{background: color}} onClick={handleClick}>
+        <div className="cursor-pointer aspect-square" style={{background: color}} onClick={handleClick}>
             
         </div>
     );
